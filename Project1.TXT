@@ -1,3 +1,0 @@
-The cab file for your application has been built as 'C:\Users\F1\Desktop\s_sds\Package\sds011.CAB'.
-
-There is also a batch file in the support directory (C:\Users\F1\Desktop\s_sds\Package\Support\sds011.BAT) that will allow you to recreate the cab file in case you make changes to some of the files.
