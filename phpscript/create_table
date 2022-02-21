@@ -1,0 +1,8 @@
+CREATE TABLE `sds011` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `guid` timestamp NOT NULL,
+ `pm25` varchar(16) NOT NULL,
+ `pm10` varchar(16) NOT NULL,
+ UNIQUE KEY `id` (`id`),
+ UNIQUE KEY `guid` (`guid`)
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1
