@@ -10,5 +10,19 @@ SDS011 is a project initiated by me. Basically it is a software that monitors ai
      
 <p><b>DISCLAIMER:</b>
 <br>This is just a personal project so pls expect the quality of the code(naming convention, coding algorith, etc) are not of commercial quality.
+     
+<p>Please note that this project is still on-going and below are my current issues as of 02/25/2022:
+<ol> <li>Python Program</li>
+     <ul>
+         <li>command line withn parameters to accept date</li> 
+         <li>panda get average per hour</li>
+         <li>create the html template</li>
+         <li>compute air quality</li>
+         <li>plotting should be average per hour</li>
+         <li>improve appearance of mplotlib graph(possible to discard this and use bootstrap line graph)</li> 
+     </ul>     
+     <li>vb realtime monitor</li>
+     <li>vb dashboard</li>
+</ol>     
 
 
