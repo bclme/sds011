@@ -22,7 +22,25 @@ SDS011 is a project initiated by me. Basically it is a software that monitors ai
          <li>improve appearance of mplotlib graph(possible to discard this and use bootstrap line graph)</li> 
      </ul>     
      <li>vb realtime monitor</li>
+     <ul>
+         <li>add form icon</li> 
+         <li>To check possible bug when just cleared picture 1, it seems 0 second does start at x = 0</li>
+         <li>enlarge fonts further</li>
+         <li>compute air quality</li>
+         <li>make the blue and red line thinner</li>
+     </ul>         
      <li>vb dashboard</li>
+     <ul>
+         <li>add new selection parameters(still in conceptualization stage)</li> 
+         <li>compute the overall air quality based on date selected in selection parameter</li>
+         <li>add new button to hide/display the data grid</li>
+         <li>compute and update the 24-hour air quality display based on the entered date in selection parameter</li>
+         <li>make the blue and red line thinner</li>
+     </ul> 
+     <li>HTML File</li>
+     <ul>
+         <li>reshuffle the colors assigned to statistical values</li> 
+     </ul>        
 </ol>     
 
 
