@@ -43,4 +43,4 @@ SDS011 is a project initiated by me. Basically it is a software that monitors ai
      </ul>        
 </ol>     
 
-<p> As of March 4, 2022 all issues has been resolved but I still consider it in Develomen but uploaded all files. The remaining issue is to make the selection screen work.
+<p> As of March 4, 2022 all issues has been resolved but I still consider it in Develomen but uploaded all files. The remaining issue is to make the selection screen work. And also, planning to use online bootstrap instead of using the bootstrap that I have downloaded with AdminLTE dashboard.
