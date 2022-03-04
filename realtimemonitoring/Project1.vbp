@@ -6,6 +6,7 @@ Module=Module1; Module1.bas
 IconForm="Form2"
 Startup="Form2"
 ExeName32="sds011.exe"
+Path32="..\sds011"
 Command32=""
 Name="Project1"
 HelpContextID="0"

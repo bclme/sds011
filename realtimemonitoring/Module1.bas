@@ -120,26 +120,14 @@ pcol10 = 0
 
 
 
- b = 255
- For a = 1300 To 16400 Step 600
-    Form2.Picture1.DrawWidth = 1
-    Form2.Picture1.FillStyle = vbSolid
-    Form2.Picture1.FillColor = RGB(b, 0, 0)
-
-    Form2.Picture1.Line (a, 6450)-Step(600, 280), vbBlue, B
-   b = b - 10
- Next
- Form2.Picture1.CurrentX = 8600
- Form2.Picture1.CurrentY = 6940
- Form2.Picture1.Print "24Hr Air Quality"
+ 
 End Sub
 
 Public Static Sub Command3_Click()
 Dim FileNumber
-
+Dim ss As Integer
 Dim Result     As String
  
-On Error Resume Next
 ShellSync "php c:\wamp64\www\sds011\index.php", vbHide
 
 'Shell "php c:\wamp64\www\sds011\index.php", vbHide
@@ -147,7 +135,7 @@ FileNumber = FreeFile
 Open "c:\wamp64\www\sds011\47.txt" For Input As FileNumber
 
 Result = Input(LOF(FileNumber), FileNumber)
-
+ss = Format(Now, "ss")
 Close FileNumber
 arrSplitStrings1 = Split(Result, "|")
 Form2.Label7.Caption = "PM2.5: " & arrSplitStrings1(0) & "  PM10: " & arrSplitStrings1(1)
@@ -155,9 +143,14 @@ If Result <> "0|0" Then
   'Text3.Text = Text3.Text & "|" & Result & vbCrLf
   Form2.Text4.Text = Result
 'Dim com As String
-
+ retart = False
   plot_graph
 Else
+ If Val(Minute(Now)) = 0 And ss = 0 Then
+   Form2.Picture1.Cls
+    prepare_graph
+
+ End If
 ' If Option2.Value = True Then
 ' If Format(Now, "ss") = "00" Then
 '    Picture1.Cls
@@ -165,8 +158,6 @@ Else
 ' End If
 ' Else
 
- 
-' End If
 End If
 
 Kill "c:\wamp64\www\sds011\47.txt"
@@ -225,7 +216,7 @@ If pcol10 = 0 And prow10 = 0 Then
     pcol10 = col10
     prow10 = row10
 End If
-Form2.Picture1.DrawWidth = 6
+Form2.Picture1.DrawWidth = 4
 Form2.Picture1.Line (prow25, pcol25)-(row25, col25), vbRed
 Form2.Picture1.Line (prow10, pcol10)-(row10, col10), vbBlue
 prow25 = row25
