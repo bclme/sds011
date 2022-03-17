@@ -44,3 +44,5 @@ SDS011 is a project initiated by me. Basically it is a software that monitors ai
 </ol>     
 
 <p> As of March 4, 2022 all issues has been resolved but I still consider it in Develoment but uploaded all files in this repository. The remaining issue is to make the selection screen work. And also, planning to use online bootstrap instead of using the bootstrap that I have downloaded with AdminLTE dashboard.
+     
+<p>As of March 17, I have uploaded the python file for the python equivalent of the dashboard, development is still on going but 85% finished. This file could be enough for those researching for a dashboard design and new to python.      
